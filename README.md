@@ -1,1 +1,3 @@
-"# gatsby-link-delay-problem" 
+```npm install```
+
+```npm start```
