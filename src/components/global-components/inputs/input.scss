@@ -1,0 +1,42 @@
+label {
+  width: 100%;
+  position: relative;
+  font-family: "Palanquin", sans-serif;
+  max-width: 400px;
+  p {
+    color: #919191;
+    font-size: .8em;
+    cursor: text;
+    margin: 0;
+    position: absolute;
+    text-transform: lowercase;
+    bottom: 8px;
+    left: 8px;
+    transition: 0.15s ease-in-out;
+  }
+  input {
+    width: 100%;
+    border: none;
+    font-size: .8em;
+    border-bottom: 2px solid #e9e9e9;
+    background-color: transparent;
+    padding: 4px 8px;
+    outline: none;
+    color: #777777;
+    transition: 0.15s ease-in-out;
+  }
+}
+
+
+.file-input {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.file-input-fake {
+  z-index: -1;
+}

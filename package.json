@@ -1,0 +1,62 @@
+{
+  "name": "gatsby-starter-default",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "0.1.0",
+  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "dependencies": {
+    "animejs": "^3.1.0",
+    "aos": "^3.0.0-beta.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.19.2",
+    "gatsby-image": "^2.2.39",
+    "gatsby-plugin-manifest": "^2.2.41",
+    "gatsby-plugin-offline": "^3.0.34",
+    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-robots-txt": "^1.5.0",
+    "gatsby-plugin-sass": "^2.1.27",
+    "gatsby-plugin-sharp": "^2.4.0",
+    "gatsby-plugin-sitemap": "^2.2.27",
+    "gatsby-plugin-smoothscroll": "^1.0.4",
+    "gatsby-plugin-styled-components": "^3.1.18",
+    "gatsby-plugin-transition-link": "^1.17.7",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-source-filesystem": "^2.1.46",
+    "gatsby-transformer-sharp": "^2.3.13",
+    "gsap": "^3.0.5",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.13.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-cookies": "^0.1.1",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-notify-toast": "^0.5.1",
+    "styled-components": "^4.4.1",
+    "universal-cookie": "^4.0.3"
+  },
+  "devDependencies": {
+    "eslint-config-react-app": "^5.1.0",
+    "prettier": "^1.19.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve -p 9891 -H 0.0.0.0",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}

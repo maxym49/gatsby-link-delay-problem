@@ -1,0 +1,92 @@
+.col-wrapper {
+  .left-col {
+    justify-content: center;
+    background-size: contain;
+    background: url("../static/svg/illustrations/wave-home.svg") no-repeat;
+    padding: 0;
+  }
+  .right-col {
+    justify-content: center;
+  }
+}
+
+.pricing-container {
+  justify-content: center;
+  padding: 0;
+}
+
+.regular-wrapper {
+  margin-bottom: 100px;
+}
+
+.contact-wrapper {
+  align-items: center;
+  label {
+    margin-right: 20px;
+  }
+  button {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1244px) {
+  .pricing-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .col-wrapper {
+    padding: 0 50px 100px;
+    flex-wrap: wrap-reverse;
+    .left-col,
+    .right-col {
+      width: 100%;
+    }
+    .right-col {
+      margin-top: 10px;
+    }
+    .left-col {
+      margin: 50px 0 0;
+      background-image: none;
+    }
+  }
+  .content-wrapper {
+    width: 100%;
+    max-width: 681px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .col-wrapper {
+    .left-col {
+      align-items: flex-start;
+      margin: 20px 0 50px;
+      padding: 0 50px;
+    }
+  }
+  .content-wrapper {
+    width: 100%;
+    max-width: 681px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .col-wrapper {
+    padding: 0 30px;
+  }
+  .pricing-container {
+    padding: 0;
+  }
+  .content-wrapper {
+    .contact-wrapper {
+      flex-direction: column;
+      align-items: center;
+      label {
+        margin-right: 20px;
+      }
+      button {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

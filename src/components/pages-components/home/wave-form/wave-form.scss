@@ -1,0 +1,62 @@
+.wave-form-wrapper {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  .column {
+    .wave-form {
+      margin: 0 -100px 0 0;
+      z-index: 2;
+      width: 100%;
+      max-width: 500px;
+      background-size: contain;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
+      label {
+        max-width: 500px;
+        width: 100%;
+        margin: 15px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wave-form-wrapper {
+    .column-wrapper {
+      flex-wrap: wrap;
+      padding: 0;
+      max-width: 900px;
+      .column {
+      padding: 0;
+        width: 100%;
+        &:last-child {
+          display: none;
+        }
+        .wave-form {
+          margin: 0;
+          label {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .wave-form-wrapper {
+    .column-wrapper {
+      flex-wrap: wrap;
+      .column {
+        width: 100%;
+        .wave-form {
+          margin: 0;
+          label {
+          }
+        }
+      }
+    }
+  }
+}

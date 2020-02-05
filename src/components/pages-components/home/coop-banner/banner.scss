@@ -1,0 +1,129 @@
+@mixin writeAnimation($name, $translate) {
+  @keyframes #{$name} {
+    0% {
+      opacity: 0;
+      transform: scale(0) translate(265.632px, $translate);
+    }
+    10% {
+      opacity: 1;
+      transform: scale(1) translate(265.632px, $translate);
+    }
+    60% {
+      opacity: 1;
+      transform: scale(1) translate(265.632px, $translate);
+    }
+    70% {
+      opacity: 0;
+      transform: scale(1) translate(265.632px, 207.885px);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0) translate(265.632px, $translate);
+    }
+  }
+}
+
+@include writeAnimation(write-1, 87.885px);
+@include writeAnimation(write-2, 97.939px);
+@include writeAnimation(write-3, 107.993px);
+@include writeAnimation(write-4, 118.047px);
+@include writeAnimation(write-5, 128.101px);
+
+.Rectangle_132,
+.Rectangle_133,
+.Rectangle_134,
+.Rectangle_135,
+.Rectangle_136 {
+  opacity: 0;
+  animation: 10s ease-in-out infinite;
+}
+
+.Rectangle_132 {
+  animation-name: write-1;
+}
+
+.Rectangle_133 {
+  animation-name: write-2;
+}
+
+.Rectangle_134 {
+  animation-name: write-3;
+}
+
+.Rectangle_135 {
+  animation-name: write-4;
+}
+
+.Rectangle_136 {
+  animation-name: write-5;
+}
+
+.Path_617 {
+  animation: 3s ease-in-out infinite rotate;
+}
+
+.Ellipse_104 {
+  animation: 3s ease-in-out infinite jump;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-122.531px, -312.571px) translateX(0);
+  }
+  50% {
+    transform: translate(-122.531px, -312.571px) translateX(200px);
+  }
+  100% {
+    transform: translate(-122.531px, -312.571px) translateX(0);
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(540.44px, 275.152px) translateY(0);
+  }
+  50% {
+    transform: translate(540.44px, 275.152px) translateY(-30px);
+  }
+  100% {
+    transform: translate(540.44px, 275.152px) translateY(0);
+  }
+}
+
+@media screen and (max-width: 1126px) {
+  .coop-banner-wrapper {
+    .column-wrapper {
+      flex-wrap: wrap;
+      .column {
+        width: 100%;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1126px) {
+  .coop-banner-wrapper {
+    .column-wrapper {
+      padding: 0;
+      .column {
+        padding: 0;
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .column-wrapper {
+    .column {
+      .contact-wrapper {
+        flex-direction: column;
+      }
+    }
+  }
+}

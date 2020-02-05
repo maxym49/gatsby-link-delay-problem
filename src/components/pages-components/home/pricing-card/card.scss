@@ -1,0 +1,65 @@
+.card-container {
+  h5 {
+    font-size: 1em;
+    text-align: center;
+  }
+  p {
+    font-size: 1em;
+  }
+  .price-wrapper {
+    h5 {
+      font-size: 4em;
+    }
+  }
+}
+
+.price-wrapper {
+  font-family: "Lato", sans-serif;
+  padding: 10px;
+  div {
+    margin-top: 20px;
+    position: relative;
+  }
+  h5 {
+    font-family: "Lato", sans-serif;
+    color: #2d2d2d;
+    font-size: 5em;
+    margin: 0;
+    font-weight: 700;
+  }
+  span {
+    color: #919191;
+    position: absolute;
+  }
+  span:first-child {
+    top: 0;
+    left: -35px;
+  }
+  span:nth-child(2) {
+    top: unset;
+    left: unset;
+    right: -10px;
+    bottom: 15px;
+    font-size: 1.2em;
+  }
+  p {
+    text-align: center;
+    font-size: 1.4em;
+  }
+}
+
+@media screen and(max-width: 1244px) {
+  .card-container {
+    margin: 10px;
+    align-self: center;
+    max-width: 500px;
+  }
+}
+
+@media screen and(max-width: 550px) {
+  .card-container {
+    margin: 10px;
+    align-self: center;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,12 @@
+.toast-notification {
+  top: 25px !important;
+  right: 25px !important;
+  left: unset !important;
+  bottom: unset !important;
+  width: unset !important;
+  span {
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+    font-size: .8em;
+  }
+}

@@ -1,0 +1,56 @@
+@mixin animation-mixin($name, $translateX, $translateY) {
+  @keyframes #{$name} {
+    0% {
+      transform: translate($translateX, $translateY) translateX(0);
+    }
+    100% {
+      transform: translate($translateX, $translateY) translateX(-10px)
+        translateY(-20px);
+    }
+  }
+}
+
+.svg-space {
+  svg {
+    width: 100%;
+    height: auto;
+    overflow: initial;
+  }
+}
+
+.Group_129 {
+  animation: riseMan 2s infinite 2s;
+}
+
+.Group_128 {
+  transform: translateY(-100vh);
+  animation: 4s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s 1 normal forwards
+    slideFromTop;
+}
+
+@keyframes riseMan {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes slideFromTop {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .svg-space {
+    margin-top: 100px;
+  }
+}
